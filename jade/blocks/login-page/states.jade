@@ -1,0 +1,11 @@
+div.checkout-fieldset-area.checkout-billing-choose-option
+  h3.heading-2 How would you like to pay?
+
+  if !isPOS
+    include paypal-card
+
+if isPaymentMethodSelected
+  .checkout-billing-pay-paypal(class= isPaypal ? "" : "hidden")
+    include terms-conditions
+  .checkout-billing-pay-card(class= isPaypal ? "hidden" : "")
+    include pay-card
