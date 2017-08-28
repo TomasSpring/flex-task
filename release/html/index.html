@@ -14,7 +14,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="main-wrapper login-wrapper">  </div>
+      <div class="main-wrapper login-wrapper">
+        <div class="login-form">
+          <h1 class="heading-1">Sing in in to  your account</h1>
+          <form method="POST" action="/register">
+            <div class="form-group">
+              <input id="email" type="email" placeholder="Email address" name="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input id="pw" type="password" placeholder="Password" name="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label">
+                <input value="privatePc" type="checkbox" checked="checked" class="checkbox"/>
+                <p class="bold checkbox-paragraph">This is a private computer.<span class="caption">Keep me signed in and allow caching</span></p>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="social-part"></div>
+        <div class="menu-part">
+          <div class="logo"> <img src="../../css/img/logo.png" class="footer-logo-img"></div>
+          <div class="menu">
+            <ul class="menu">
+              <li class="menu-item">Contact</li>
+              <li class="menu-item">Support</li>
+              <li class="menu-item">Legal Information</li>
+              <li class="menu-item">Privacy Policy</li>
+              <li class="menu-item">Terms of Service</li>
+              <li class="menu-item">Site map</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

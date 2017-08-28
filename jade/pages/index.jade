@@ -1,5 +1,7 @@
 extends ../../jade/layouts/flex-layout
+include ../mixins/mixins
+
 
 block main 
-
-  .main-wrapper.login-wrapper   
+  .main-wrapper.login-wrapper
+      include ../blocks/login-page/states

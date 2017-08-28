@@ -1,0 +1,26 @@
+footer {
+  background-color: @black-1;
+  border-top: 1px solid @black;
+  min-height: 200px;
+  padding: 0 60px;
+  .social-part,
+  .menu-part {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-part {
+    border-top: 1px solid @border-color;
+    .menu {
+      margin: auto 0;
+      .menu-item {
+        border-right: 1px solid @grey-1;
+        color: @grey-1;
+        display: inline-block;
+        padding: 0 10px;
+        &:last-child {
+          border-right-width: 0;
+        }
+      }
+    }
+  }
+}

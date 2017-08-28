@@ -1,0 +1,32 @@
+.login-wrapper {
+  background-color: @light-gray;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 3 2 auto;
+  -ms-flex: 3 2 auto;
+  flex: 3 2 auto;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin: auto 0;
+  display: flex;
+
+}
+
+.login-form {
+  width: 20%;
+  margin: auto;
+  .form-group  {
+    margin-bottom: 15px;
+  }
+  .form-control {
+    .mixin-box-sizing(border-box);
+    border-radius: 3px;
+    border: 1px solid @border-gray;
+    font-family: @font-stack;
+    height: @inputHeight;
+    padding: 0 10px;
+    width: 100%;
+  }
+}

@@ -1,6 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /*Colors*/
+/* Fonts */
+/*Sizes*/
+html,
+body {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
 .container {
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  height: 100%;
   max-width: 100%;
   overflow: hidden;
 }
@@ -26,6 +168,100 @@ a[href^="tel"] {
   color: inherit;
   text-decoration: none;
 }
+.heading-1 {
+  color: #626469;
+  font-size: 28px;
+  margin: 0 0 40px;
+}
+.bold {
+  font-weight: bold;
+}
+.checkbox-paragraph {
+  color: #626469;
+  font-size: 14px;
+  float: right;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.caption {
+  color: #b3b2c3;
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #63923b;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  line-height: normal;
+  outline: none;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+.btn-primary {
+  background-color: #87c146;
+}
 .login-wrapper {
   background-color: #f4f4f4;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 3 2 auto;
+  -ms-flex: 3 2 auto;
+  flex: 3 2 auto;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin: auto 0;
+  display: flex;
+}
+.login-form {
+  width: 20%;
+  margin: auto;
+}
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+.login-form .form-control {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 35px;
+  padding: 0 10px;
+  width: 100%;
+}
+footer {
+  background-color: #2a3136;
+  border-top: 1px solid #000;
+  min-height: 200px;
+  padding: 0 60px;
+}
+footer .social-part,
+footer .menu-part {
+  display: flex;
+  justify-content: space-between;
+}
+footer .menu-part {
+  border-top: 1px solid #383f43;
+}
+footer .menu-part .menu .menu-item {
+  border-right: 1px solid #7c7877;
+  color: #7c7877;
+  display: inline-block;
+  padding: 0 10px;
+}
+footer .menu-part .menu .menu-item:last-child {
+  border-right-width: 0;
 }

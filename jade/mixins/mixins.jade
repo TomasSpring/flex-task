@@ -1,0 +1,7 @@
+mixin checkbox(inputValue, text, caption, isChecked, paragraphClass,captionClass)
+  label.checkbox-label
+    input.checkbox(value=inputValue, type="checkbox", checked=(isChecked ? "checked" : undefined))
+    p(class=paragraphClass)
+      | !{text}
+      span(class=captionClass)
+        | !{caption}

@@ -1,11 +1,10 @@
-div.checkout-fieldset-area.checkout-billing-choose-option
-  h3.heading-2 How would you like to pay?
-
-  if !isPOS
-    include paypal-card
-
-if isPaymentMethodSelected
-  .checkout-billing-pay-paypal(class= isPaypal ? "" : "hidden")
-    include terms-conditions
-  .checkout-billing-pay-card(class= isPaypal ? "hidden" : "")
-    include pay-card
+.login-form
+  h1.heading-1 Sing in in to  your account
+  form(method='POST' action='/register')
+    div.form-group
+      input#email.form-control(type='email', placeholder='Email address' name='email')
+    div.form-group
+      input#pw.form-control(type='password', placeholder='Password' name='password')
+    div.form-group
+      +checkbox('privatePc', 'This is a private computer.','Keep me signed in and allow caching', 'true','bold checkbox-paragraph', 'caption')
+    button.btn.btn-primary(type='submit') Sign in

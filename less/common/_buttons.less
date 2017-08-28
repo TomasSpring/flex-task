@@ -1,0 +1,22 @@
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: @primary-button-border;
+  .mixin-box-sizing(border-box);
+  color: @white-1;
+  cursor: pointer;
+  height: @inputHeight;
+  line-height: normal;
+  outline: none;
+  //@include border-radius(0);
+  //@include x-appearance(none);
+  overflow: hidden;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: @primary-button;
+}

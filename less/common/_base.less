@@ -1,5 +1,18 @@
+html,
+body {
+  height: 100%;
+  .mixin-box-sizing(border-box);
+  font-family: @font-stack;
+}
+
 .container {
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  height: 100%;
   max-width: 100%;
   overflow: hidden;
 }
@@ -31,4 +44,29 @@
 a[href^="tel"]{
   color:inherit;
   text-decoration:none;
+}
+
+.heading-1 {
+  color: @heading-1;
+  font-size: 28px;
+  margin: 0 0 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.checkbox-paragraph {
+  color: @heading-1;
+  font-size: @primary-font-size;
+  float: right;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.caption {
+  color: @caption;
+  display: block;
+  font-size: @caption-font-size;
+  margin-top: 10px;
 }
